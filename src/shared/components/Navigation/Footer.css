@@ -1,0 +1,65 @@
+.footer {
+  background-color:rgb(216, 208, 208); /* Серый цвет фона */
+  padding: 1rem; /* Отступы внутри футера */
+  text-align: center; /* Центрируем текст */
+  width: 100%; /* Устанавливаем ширину 100% */
+  max-width: 1440px; /* Ограничиваем максимальную ширину */
+  position: fixed; /* Фиксируем футер */
+  bottom: 0; /* Прикрепляем футер к низу страницы */
+  left: 50%; /* Центрируем футер по горизонтали */
+  transform: translateX(-50%); /* Сдвигаем футер влево на половину его ширины */
+  margin: 0 auto; /* Центрируем футер по горизонтали */
+  z-index: 100; /* Устанавливаем z-index, чтобы футер был поверх других элементов */
+}
+
+.footer__icons {
+  display: flex; /* Используем flexbox для иконок */
+  justify-content: center; /* Центрируем иконки */
+  gap: 1rem; /* Промежуток между иконками */
+}
+
+.footer__icons a {
+  color: #292929; /* Цвет иконок */
+  font-size: 1.5rem; /* Размер иконок */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.footer__icons a:hover {
+  color: #ff0055; /* Цвет при наведении на иконки */
+}
+
+.footer p {
+  margin-top: 1rem; /* Отступ сверху для текста */
+}
+
+.footer__text {
+  font-family: 'Allura', cursive; /* Применяем шрифт Kolibri */
+  font-size: 1.5rem; /* Размер шрифта */
+  margin: 0; /* Убираем отступы */
+}
+
+.footer__text a {
+  color: #292929; 
+  text-decoration: none; 
+}
+
+.footer__text a:hover {
+  color: #ff0055; 
+  text-decoration: underline; 
+}
+
+media (max-width: 768px) {
+  .footer {
+      width: 100%; /* Устанавливаем ширину 100% для мобильных устройств */
+      padding: 0.5rem; /* Уменьшаем отступы на мобильных устройствах */
+      font-size: 1rem; /* Уменьшаем размер шрифта */
+  }
+
+  .footer__icons {
+      flex-direction: column; /* Изменяем направление на колонку для мобильных устройств */
+  }
+
+  .footer__text {
+      font-size: 1.2rem; /* Уменьшаем размер шрифта на мобильных устройствах */
+  }
+}
